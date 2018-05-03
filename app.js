@@ -1,24 +1,16 @@
 // YOUR IMPORTS BELOW:
+//WARMUP
+import warmup from './utils/warmup.js';
+//DATEANDTIME
 
+//MATH
+
+//ARRAYS
+
+//UTILITIES
 
 // YOUR FUNCTION CALLS BELOW:
-
-
-
-// WHEN COMPLETE - THIS LINE AND EVERYTHING BELOW SHOULD BE REMOVED
-/*
-INSTRUCTIONS
-1- The only thing that should be in app.js are all of the appropriate imports and all the function calls.
-2 - For each category, create a corresponding file. i.e, Strings = strings.js
-3 - Put each of the files created in a /utils directory
-4 - Each category will have export / import instructions. Read carefully!
-*/
-
-//  WARMUP
-// Export warmUp() as a 'default'
-function warmUp(data) {
-  return console.log("Imported this function: ", data);
-};
+//WARMUP
 
 warmUp(warmUp);
 
