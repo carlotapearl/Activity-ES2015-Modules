@@ -1,7 +1,23 @@
-/*
-INSTRUCTIONS
-1- The only thing that should be in app.js are all of the appropriate imports and all the function calls.
-2 - For each category, create a corresponding file. i.e, Strings = strings.js
-3 - Put each of the files created in a /utils directory
-4 - Each category will have export / import instructions. Read carefully!
-*/
+// Keep variables in the arrays file, no need to export.
+// Export each function individually.
+// Import each function individually using { }.
+
+var allLanguages = [];
+var languages = ["JavaScript", "Ruby", "Phython", "CSS"]
+var moreLanguages = {
+  html: "HTML",
+  php: "php"
+}
+
+function mapper(){
+  return Object.keys(moreLanguages).map(function(key){
+    var items = moreLanguages[key];
+    console.log("mapper: ", items);
+    return items;
+  });
+}
+
+function concatArrays(){
+ var newArray = languages.concat(mapper())
+ console.log(newArray);
+}
