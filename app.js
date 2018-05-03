@@ -2,7 +2,7 @@
 //WARMUP
 import warmup from './utils/warmup.js';
 //DATEANDTIME
-
+import * as allfunctions from './utils/dateandtime.js'
 //MATH
 
 //ARRAYS
@@ -18,18 +18,10 @@ warmUp(warmUp);
 // DATEANDTIME
 // Export ALL date and time functions, inline.
 // Import  using the * operator (as = allfunctions).
-function getCurrentTime(){
-  var time = new Date().toLocaleTimeString();
-  return console.log(time);
-};
 
-function getCurrentDate(){
-  var date = new Date().toLocaleDateString();
-  return console.log(date);
-};
 
-getCurrentTime();
-getCurrentDate();
+allfunctions.getCurrentTime();
+allfunctions.getCurrentDate();
 
 
 // MATH
