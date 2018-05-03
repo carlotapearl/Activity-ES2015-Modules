@@ -4,7 +4,7 @@ import warmup from './utils/warmup.js';
 //DATEANDTIME
 import * as allfunctions from './utils/dateandtime.js'
 //MATH
-
+import {square, round} from './utils/math.js';
 //ARRAYS
 
 //UTILITIES
@@ -14,36 +14,14 @@ import * as allfunctions from './utils/dateandtime.js'
 
 warmUp(warmUp);
 
-
 // DATEANDTIME
-// Export ALL date and time functions, inline.
-// Import  using the * operator (as = allfunctions).
-
 
 allfunctions.getCurrentTime();
 allfunctions.getCurrentDate();
 
-
 // MATH
-// Export all functions individually.
-// Import only square and round, using { }.
-
-function power(x,y){
-  return console.log(Math.pow(x,y));
-};
-
-power(8,2);
-
-function square(x){
-  return console.log(Math.sqrt(x));
-};
 
 square(64);
-
-function round(x){
-  return console.log(Math.round(x))
-};
-
 round(6.234);
 
 // ARRAYS
