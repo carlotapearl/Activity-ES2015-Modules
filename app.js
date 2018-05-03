@@ -9,7 +9,7 @@ import {square, round} from './utils/math.js';
 import { mapper } from './utils/arrays.js';
 import { concatArrays } from './utils/arrays.js';
 //UTILITIES
-
+import * as utilities from './utils/utilities.js';
 // YOUR FUNCTION CALLS BELOW:
 //WARMUP
 
@@ -31,21 +31,7 @@ mapper();
 concatArrays();
 
 // UTILITIES
-// Export both the function and myObject, inline.
-// Import both using the * operator (as = utilities).
 
-function iterator(data){
-  data.forEach(function(item){
-    console.log("Item:", item)
-  })
-};
 
-var myObject = {
-  array: ["motheboard", "memory", "processor"],
-  greeting: function(name){
-    return console.log("Hello, my name is " + name + ".");
-  }
-};
-
-iterator(myObject.array);
-myObject.greeting('Matt');
+utilities.iterator(utilities.myObject.array);
+utilities.myObject.greeting('Matt');
